@@ -29,7 +29,7 @@ def hangman(secret, blank='*'):
 
 
 def _word():
-    with open('words_sorted.txt', encoding="utf-8") as word_file:
+    with open('words.txt', encoding="utf-8") as word_file:
         wordlist = [line.strip() for line in word_file if len(line) > 5]
     print(f"Finished reading a word list of {len(wordlist)} words.")
     rng = Random()
